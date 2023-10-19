@@ -1,5 +1,5 @@
 import React from 'react';
-import ShopItem from './ShopItem';
+import ShopItem from './ShopCard';
 
 const CardView = ({ cards }) => {
     const products = cards;
