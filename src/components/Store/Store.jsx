@@ -20,7 +20,7 @@ const Store = ({ props }) => {
                 <IconSwitch icon={icon} onSwitch={changeIcon} />
             </header>
             <main className='main'>
-                {icon === 'view_list' ? <ListView items={data}/> : <CardView items={data}/>}
+                {icon === 'view_list' ? <ListView items={data}/> : <CardView cards={data}/>}
             </main>
         </>
     );

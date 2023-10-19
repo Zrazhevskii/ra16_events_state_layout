@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-const ShopItem = ({ item }) => {
+export const ShopItem = ({ item }) => {
     // console.log(item);
     const product = item;
-    // console.log(product)
+    console.log(product)
     return (
         <div>
 
