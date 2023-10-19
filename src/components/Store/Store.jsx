@@ -1,12 +1,29 @@
 import React from 'react';
 import { useState } from 'react';
+import IconSwitch from '../IconSwitch/IconSwitch';
+import CardView from '../CardView/CardView';
+import ListView from '../ListView/ListView';
 
-const Store = ({props}) => {
-    const [count, setCount] = useState(0)
-
+const Store = ({ props }) => {
     const data = props;
-    // console.log(data);
-    return <div>Store</div>;
+    const [icon, setIcon] = useState('view_list');
+
+    function changeIcon() {
+        let state;
+        icon === 'view_list' ? (state = 'view_module') : (state = 'view_list');
+        setIcon(state);
+    }
+
+    return (
+        <>
+            <header className='header'>
+                <IconSwitch icon={icon} onSwitch={changeIcon} />
+            </header>
+            <main className='main'>
+                {icon === 'view_list' ? <ListView items={data}/> : <CardView items={data}/>}
+            </main>
+        </>
+    );
 };
 
 export default Store;
