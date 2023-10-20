@@ -18,6 +18,7 @@
     height: 300px;
     background-color: rgb(245, 243, 243);
     border-radius: 10px;
+    z-index: 1;
 }
 
 .items:nth-child(n+4){
@@ -25,8 +26,30 @@
 }
 
 .item-img {
-    width: 250px;
-    height: 240px;
+    max-width: 250px;
+    max-height: 220px;
     margin: auto;
+    margin-top: -30px;
+}
+
+.littie-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -30px;
+    margin-bottom: 15px;
+}
+
+.card {
+    margin-right: 20px;
+}
+
+.dollar {
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.color {
+    z-index: 5;
 }
 
