@@ -6,7 +6,7 @@ export const IconSwitch = ({ icon, onSwitch }) => {
 
     return (
         <div className='icons-wrapper' >
-          <button className='material-icons' onClick={onSwitch}>{icon}</button>
+          <span className='material-icons' onClick={onSwitch}>{icon}</span>
         </div>
       )
 };

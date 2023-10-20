@@ -1,12 +1,13 @@
 import React from 'react';
 
 const ShopItem = ({ item }) => {
-    // console.log(item);
-    const product = item;
-    // console.log(product)
     return (
-        <div>
-
+        <div className="box">
+            <img src={item.img} alt="Какой-то кроссовок" className="image"/>
+            <h2 className="title">{item.name}</h2>
+            <div className="color">{item.color}</div>
+            <div className="price">${item.price}</div>
+            <button className="btn">Add to card</button>
         </div>
     )
 };

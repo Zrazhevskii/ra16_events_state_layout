@@ -1,5 +1,6 @@
 import React from 'react';
-import ShopItem from './ShopCard';
+import ShopCard from './ShopCard';
+import './CardView.css'
 
 const CardView = ({ cards }) => {
     const products = cards;
@@ -10,7 +11,7 @@ const CardView = ({ cards }) => {
         <div className="list-items">
             <div className='list'>
             {products.map((product) => (
-                <ShopItem item={product} key={index++}/>
+                <ShopCard item={product} key={index++}/>
             ))}
             </div>
         </div>

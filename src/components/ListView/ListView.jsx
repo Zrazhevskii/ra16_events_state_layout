@@ -1,5 +1,6 @@
 import React from 'react';
 import ShopItem from './ShopItem';
+import './ListView.css'
 
 const ListView = ({ items }) => {
     const products = items;
@@ -7,8 +8,8 @@ const ListView = ({ items }) => {
     // console.log(products)
 
     return (
-        <div className="list-items">
-            <div className='list'>
+        <div className="list-products-wrapper">
+            <div className='list-box'>
             {products.map((product) => (
                 <ShopItem item={product} key={index++}/>
             ))}

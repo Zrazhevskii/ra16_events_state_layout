@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 .icons-wrapper {
-    position: absolute;
+    /* position: absolute; */
     display: flex;
     justify-content: flex-end;
-    width: 100%;
-    top: 0px;
-    margin-bottom: 43px;
+    width: 1000px;
+    top: 0;
+    right: 0;
+    margin: 20px auto;
     cursor: pointer;
+    /* background-color: rgb(84, 32, 14);  */
 }
 
 .icons:hover {
@@ -15,5 +17,5 @@
 }
 
 .material-icons {
-    background-color: rgb(237, 152, 121);    
+    background-color: rgb(248, 79, 17);    
 }
