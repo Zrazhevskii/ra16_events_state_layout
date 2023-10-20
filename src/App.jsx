@@ -1,14 +1,13 @@
-import './App.css'
-import Store from './components/Store/Store'
-import products from './db/products'
+import './App.css';
+import Store from './components/Store/Store';
+import products from './db/products';
 
 function App() {
-
-  return (
-    <>
-      <Store props={products}/>
-    </>
-  )
+    return (
+        <>
+            <Store props={products} />
+        </>
+    );
 }
 
-export default App
+export default App;

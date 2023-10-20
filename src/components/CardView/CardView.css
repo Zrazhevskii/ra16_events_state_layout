@@ -21,7 +21,7 @@
     z-index: 1;
 }
 
-.items:nth-child(n+4){
+.items:nth-child(n + 4) {
     margin-top: 10px;
 }
 
@@ -52,4 +52,3 @@
 .color {
     z-index: 5;
 }
-

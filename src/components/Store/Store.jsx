@@ -1,9 +1,8 @@
-import React from 'react';
 import { useState } from 'react';
 import IconSwitch from '../IconSwitch/IconSwitch';
 import CardView from '../CardView/CardView';
 import ListView from '../ListView/ListView';
-import './Store.css'
+import './Store.css';
 
 const Store = ({ props }) => {
     const data = props;
@@ -21,7 +20,11 @@ const Store = ({ props }) => {
                 <IconSwitch icon={icon} onSwitch={changeIcon} />
             </header>
             <main className='main'>
-                {icon === 'view_list' ? <ListView items={data}/> : <CardView cards={data}/>}
+                {icon === 'view_list' ? (
+                    <ListView items={data} />
+                ) : (
+                    <CardView cards={data} />
+                )}
             </main>
         </div>
     );

@@ -6,7 +6,7 @@
 }
 
 .list-box {
-    width: 100%;    
+    width: 100%;
 }
 
 .box {
@@ -41,7 +41,7 @@
 }
 
 .btn:hover {
-    border:2px solid rgb(243, 110, 61);
+    border: 2px solid rgb(243, 110, 61);
     background-color: rgb(244, 135, 96);
     color: white;
 }
