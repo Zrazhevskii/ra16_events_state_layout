@@ -4,7 +4,6 @@ import './CardView.css';
 const CardView = ({ cards }) => {
     const products = cards;
     let index = 0;
-    // console.log(products)
 
     return (
         <div className='list-items'>
